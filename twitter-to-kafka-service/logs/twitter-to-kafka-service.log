@@ -1,0 +1,6 @@
+2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.13 on veli-dev with PID 19689 (/home/veli/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by veli in /home/veli/IdeaProjects/microservices-demo)
+2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.602 seconds (JVM running for 1.072)
+2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - App Stated...
+2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hey
