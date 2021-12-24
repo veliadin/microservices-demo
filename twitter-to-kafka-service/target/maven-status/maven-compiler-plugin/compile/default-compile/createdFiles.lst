@@ -1,2 +1,5 @@
 com/microservicesdemo/twittertokafka/config/TwitterToKafkaServiceConfigData.class
+com/microservicesdemo/twittertokafka/listener/TwitterKafkaStatusListener.class
+com/microservicesdemo/twittertokafka/runner/impl/TwitterKafkaStreamRunner.class
 com/microservicesdemo/twittertokafka/TwitterToKafkaServiceApplication.class
+com/microservicesdemo/twittertokafka/runner/StreamRunner.class

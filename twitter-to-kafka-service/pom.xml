@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>org.twitter4j</groupId>
-            <artifactId>twitter4j-core</artifactId>
+            <artifactId>twitter4j-stream</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -31,4 +31,12 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
