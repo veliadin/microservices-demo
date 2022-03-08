@@ -1,12 +1,128 @@
-2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.13 on veli-dev with PID 19689 (/home/veli/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by veli in /home/veli/IdeaProjects/microservices-demo)
-2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.602 seconds (JVM running for 1.072)
-2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - App Stated...
-2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2021-12-23 11:07:37 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hey
-2022-01-14 13:32:45 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.13 on veli-dev with PID 41686 (/home/veli/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by veli in /home/veli/IdeaProjects/microservices-demo)
-2022-01-14 13:32:45 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2022-01-14 13:32:46 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.151 seconds (JVM running for 2.311)
-2022-01-14 13:32:46 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - App Stated...
-2022-01-14 13:32:46 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2022-01-14 13:32:46 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hey
+2022-03-08 15:44:20 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.13 on veli-dev with PID 56439 (/home/veli/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by veli in /home/veli/IdeaProjects/microservices-demo)
+2022-03-08 15:44:20 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-03-08 15:44:20 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.844 seconds (JVM running for 1.959)
+2022-03-08 15:44:20 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - App Stated...
+2022-03-08 15:44:20 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-03-08 15:44:20 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hey
+2022-03-08 15:44:20 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Stating mock filtering twitter streams for keywords  Java
+2022-03-08 15:44:20 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-08 15:44:20 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.microservicesdemo.twittertokafka.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:29)
+Caused by: twitter4j.TwitterException: Unterminated object at character 46 of {"created_at":"Sal Mar 08 15:44:20 TRT 2022" "id":"5362418878554086957" "text":"Java Spring Spring Java Spring Kafka Microservices Elasticsearch Elasticsearch Microservices Spring Kafka" "user":{"id":"4150785947205224893"} }
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:57)
+	at com.microservicesdemo.twittertokafka.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:70)
+	at com.microservicesdemo.twittertokafka.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:37)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 common frames omitted
+Caused by: twitter4j.JSONException: Unterminated object at character 46 of {"created_at":"Sal Mar 08 15:44:20 TRT 2022" "id":"5362418878554086957" "text":"Java Spring Spring Java Spring Kafka Microservices Elasticsearch Elasticsearch Microservices Spring Kafka" "user":{"id":"4150785947205224893"} }
+	at twitter4j.JSONTokener.syntaxError(JSONTokener.java:486)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:427)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONObject.<init>(JSONObject.java:167)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	... 8 common frames omitted
+2022-03-08 15:44:55 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.13 on veli-dev with PID 56748 (/home/veli/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by veli in /home/veli/IdeaProjects/microservices-demo)
+2022-03-08 15:44:55 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-03-08 15:44:55 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.532 seconds (JVM running for 0.952)
+2022-03-08 15:44:55 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - App Stated...
+2022-03-08 15:44:55 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-03-08 15:44:55 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hey
+2022-03-08 15:44:55 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Stating mock filtering twitter streams for keywords  Java
+2022-03-08 15:44:55 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-08 15:44:55 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.microservicesdemo.twittertokafka.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:29)
+Caused by: twitter4j.TwitterException: Unterminated object at character 46 of {"created_at":"Sal Mar 08 15:44:55 TRT 2022" "id":"7493852074827879983" "text":"Microservices Java Elasticsearch Java Elasticsearch Java Spring Elasticsearch Java" "user":{"id":"7076815407361253997"} }
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:57)
+	at com.microservicesdemo.twittertokafka.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:70)
+	at com.microservicesdemo.twittertokafka.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:37)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 common frames omitted
+Caused by: twitter4j.JSONException: Unterminated object at character 46 of {"created_at":"Sal Mar 08 15:44:55 TRT 2022" "id":"7493852074827879983" "text":"Microservices Java Elasticsearch Java Elasticsearch Java Spring Elasticsearch Java" "user":{"id":"7076815407361253997"} }
+	at twitter4j.JSONTokener.syntaxError(JSONTokener.java:486)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:427)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONObject.<init>(JSONObject.java:167)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	... 8 common frames omitted
+2022-03-08 15:50:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.13 on veli-dev with PID 58117 (/home/veli/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by veli in /home/veli/IdeaProjects/microservices-demo)
+2022-03-08 15:50:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-03-08 15:50:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.516 seconds (JVM running for 0.956)
+2022-03-08 15:50:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - App Stated...
+2022-03-08 15:50:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-03-08 15:50:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hey
+2022-03-08 15:50:26 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Stating mock filtering twitter streams for keywords  Java
+2022-03-08 15:50:26 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-08 15:50:26 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.microservicesdemo.twittertokafka.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:29)
+Caused by: twitter4j.TwitterException: Unterminated object at character 46 of {"created_at":"Sal Mar 08 15:50:26 TRT 2022" "id":"4553732259596838464" "text":"Elasticsearch Java Elasticsearch Kafka Elasticsearch" "user":{"id":"8623987416598626451"} }
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:57)
+	at com.microservicesdemo.twittertokafka.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:70)
+	at com.microservicesdemo.twittertokafka.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:37)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 common frames omitted
+Caused by: twitter4j.JSONException: Unterminated object at character 46 of {"created_at":"Sal Mar 08 15:50:26 TRT 2022" "id":"4553732259596838464" "text":"Elasticsearch Java Elasticsearch Kafka Elasticsearch" "user":{"id":"8623987416598626451"} }
+	at twitter4j.JSONTokener.syntaxError(JSONTokener.java:486)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:427)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONObject.<init>(JSONObject.java:167)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	... 8 common frames omitted
+2022-03-08 15:53:07 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.13 on veli-dev with PID 58638 (/home/veli/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by veli in /home/veli/IdeaProjects/microservices-demo)
+2022-03-08 15:53:07 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-03-08 15:53:08 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.518 seconds (JVM running for 1.72)
+2022-03-08 15:53:08 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - App Stated...
+2022-03-08 15:53:08 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-03-08 15:53:08 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hey
+2022-03-08 15:53:08 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Stating mock filtering twitter streams for keywords  Java
+2022-03-08 15:53:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-08 15:53:08 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.microservicesdemo.twittertokafka.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:29)
+Caused by: twitter4j.TwitterException: Unterminated object at character 46 of {"created_at":"Sal Mar 08 15:53:08 TRT 2022" "id":"4409744631220423906" "text":"Microservices Elasticsearch Elasticsearch Kafka Elasticsearch Elasticsearch Java Spring Java Elasticsearch Elasticsearch Elasticsearch Microservices Elasticsearch Microservices" "user":{"id":"6401629459710456358"} }
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:57)
+	at com.microservicesdemo.twittertokafka.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:70)
+	at com.microservicesdemo.twittertokafka.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:37)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 common frames omitted
+Caused by: twitter4j.JSONException: Unterminated object at character 46 of {"created_at":"Sal Mar 08 15:53:08 TRT 2022" "id":"4409744631220423906" "text":"Microservices Elasticsearch Elasticsearch Kafka Elasticsearch Elasticsearch Java Spring Java Elasticsearch Elasticsearch Elasticsearch Microservices Elasticsearch Microservices" "user":{"id":"6401629459710456358"} }
+	at twitter4j.JSONTokener.syntaxError(JSONTokener.java:486)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:427)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONObject.<init>(JSONObject.java:167)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	... 8 common frames omitted
